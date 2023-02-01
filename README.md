@@ -1,12 +1,12 @@
 # COMP3000
 COMP3000 Encryption Project
 
-login:
-
+Login detail 
 user: testname
 password: 123456
 
 Requirement list:
+
 1.RSA and AES encryption algorithms: The application should have the capability to encrypt and decrypt files and texts using RSA and AES algorithms.
 
 2.Key Generation: The application should have a function to generate RSA and AES keys and save it in the device, with the choice of choosing key sizes,
