@@ -1,5 +1,5 @@
 # COMP3000
-COMP3000 Encryption Project
+COMP3000 Encryption Project (Bouncycastle API)
 
 Login detail
 
