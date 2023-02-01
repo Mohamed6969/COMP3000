@@ -4,6 +4,7 @@ COMP3000 Encryption Project
 Login detail
 
 user: testname
+
 password: 123456
 
 Requirement list:
