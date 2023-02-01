@@ -1,7 +1,8 @@
 # COMP3000
 COMP3000 Encryption Project
 
-Login detail 
+Login detail
+
 user: testname
 password: 123456
 
