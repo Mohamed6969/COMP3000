@@ -1,4 +1,4 @@
-# COMP3000
+# COMP3000 Encrypto
 COMP3000 Encryption Project
 
 Key derivation function uses rfc2898 (generates salt to make the passwords more secure)
