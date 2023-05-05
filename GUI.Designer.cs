@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
@@ -144,7 +145,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.tabPage1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.groupBox2);
@@ -161,6 +162,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(12, 15);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -177,6 +179,7 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.openAESDecKeyButton);
             this.groupBox3.Controls.Add(this.openAESDecFileButton);
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox3.Location = new System.Drawing.Point(8, 343);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
@@ -188,13 +191,14 @@
             // 
             // AESDecButton
             // 
+            this.AESDecButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.AESDecButton.Location = new System.Drawing.Point(211, 167);
             this.AESDecButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AESDecButton.Name = "AESDecButton";
             this.AESDecButton.Size = new System.Drawing.Size(100, 28);
             this.AESDecButton.TabIndex = 8;
             this.AESDecButton.Text = "Decrypt";
-            this.AESDecButton.UseVisualStyleBackColor = true;
+            this.AESDecButton.UseVisualStyleBackColor = false;
             this.AESDecButton.Click += new System.EventHandler(this.AESDecButton_Click);
             // 
             // selectedAESDecKey
@@ -237,24 +241,26 @@
             // 
             // openAESDecKeyButton
             // 
+            this.openAESDecKeyButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.openAESDecKeyButton.Location = new System.Drawing.Point(9, 95);
             this.openAESDecKeyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.openAESDecKeyButton.Name = "openAESDecKeyButton";
             this.openAESDecKeyButton.Size = new System.Drawing.Size(100, 28);
             this.openAESDecKeyButton.TabIndex = 1;
             this.openAESDecKeyButton.Text = "Key";
-            this.openAESDecKeyButton.UseVisualStyleBackColor = true;
+            this.openAESDecKeyButton.UseVisualStyleBackColor = false;
             this.openAESDecKeyButton.Click += new System.EventHandler(this.openAESDecKeyButton_Click);
             // 
             // openAESDecFileButton
             // 
+            this.openAESDecFileButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.openAESDecFileButton.Location = new System.Drawing.Point(9, 25);
             this.openAESDecFileButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.openAESDecFileButton.Name = "openAESDecFileButton";
             this.openAESDecFileButton.Size = new System.Drawing.Size(100, 28);
             this.openAESDecFileButton.TabIndex = 0;
             this.openAESDecFileButton.Text = "File";
-            this.openAESDecFileButton.UseVisualStyleBackColor = true;
+            this.openAESDecFileButton.UseVisualStyleBackColor = false;
             this.openAESDecFileButton.Click += new System.EventHandler(this.openAESDecFileButton_Click);
             // 
             // groupBox2
@@ -266,6 +272,7 @@
             this.groupBox2.Controls.Add(this.selectedAESEncFile);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.openAESEncFileButton);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox2.Location = new System.Drawing.Point(8, 133);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
@@ -277,13 +284,14 @@
             // 
             // AESEncButton
             // 
+            this.AESEncButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.AESEncButton.Location = new System.Drawing.Point(211, 158);
             this.AESEncButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AESEncButton.Name = "AESEncButton";
             this.AESEncButton.Size = new System.Drawing.Size(100, 28);
             this.AESEncButton.TabIndex = 6;
             this.AESEncButton.Text = "Encrypt";
-            this.AESEncButton.UseVisualStyleBackColor = true;
+            this.AESEncButton.UseVisualStyleBackColor = false;
             this.AESEncButton.Click += new System.EventHandler(this.AESEncButton_Click);
             // 
             // selectedAESEncKey
@@ -307,13 +315,14 @@
             // 
             // openAESEncKeyButton
             // 
+            this.openAESEncKeyButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.openAESEncKeyButton.Location = new System.Drawing.Point(8, 89);
             this.openAESEncKeyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.openAESEncKeyButton.Name = "openAESEncKeyButton";
             this.openAESEncKeyButton.Size = new System.Drawing.Size(100, 28);
             this.openAESEncKeyButton.TabIndex = 3;
             this.openAESEncKeyButton.Text = "Key";
-            this.openAESEncKeyButton.UseVisualStyleBackColor = true;
+            this.openAESEncKeyButton.UseVisualStyleBackColor = false;
             this.openAESEncKeyButton.Click += new System.EventHandler(this.openAESEncKeyButton_Click);
             // 
             // selectedAESEncFile
@@ -337,19 +346,21 @@
             // 
             // openAESEncFileButton
             // 
+            this.openAESEncFileButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.openAESEncFileButton.Location = new System.Drawing.Point(8, 26);
             this.openAESEncFileButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.openAESEncFileButton.Name = "openAESEncFileButton";
             this.openAESEncFileButton.Size = new System.Drawing.Size(100, 28);
             this.openAESEncFileButton.TabIndex = 0;
             this.openAESEncFileButton.Text = "File";
-            this.openAESEncFileButton.UseVisualStyleBackColor = true;
+            this.openAESEncFileButton.UseVisualStyleBackColor = false;
             this.openAESEncFileButton.Click += new System.EventHandler(this.openAESEncFileButton_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.selectAESKeySize);
             this.groupBox1.Controls.Add(this.generateAESKeyButton);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(8, 57);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
@@ -361,7 +372,9 @@
             // 
             // selectAESKeySize
             // 
+            this.selectAESKeySize.BackColor = System.Drawing.SystemColors.Desktop;
             this.selectAESKeySize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.selectAESKeySize.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.selectAESKeySize.FormattingEnabled = true;
             this.selectAESKeySize.ItemHeight = 16;
             this.selectAESKeySize.Items.AddRange(new object[] {
@@ -377,21 +390,25 @@
             // 
             // generateAESKeyButton
             // 
+            this.generateAESKeyButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.generateAESKeyButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.generateAESKeyButton.Location = new System.Drawing.Point(83, 22);
             this.generateAESKeyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.generateAESKeyButton.Name = "generateAESKeyButton";
             this.generateAESKeyButton.Size = new System.Drawing.Size(121, 28);
             this.generateAESKeyButton.TabIndex = 0;
             this.generateAESKeyButton.Text = "Save the key";
-            this.generateAESKeyButton.UseVisualStyleBackColor = true;
+            this.generateAESKeyButton.UseVisualStyleBackColor = false;
             this.generateAESKeyButton.Click += new System.EventHandler(this.generateAESKeyButton_Click);
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.groupBox6);
             this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Controls.Add(this.groupBox4);
+            this.tabPage2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
@@ -399,7 +416,7 @@
             this.tabPage2.Size = new System.Drawing.Size(539, 565);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "RSA";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // label7
             // 
@@ -421,6 +438,7 @@
             this.groupBox6.Controls.Add(this.label10);
             this.groupBox6.Controls.Add(this.openRSADecKeyButton);
             this.groupBox6.Controls.Add(this.openRSADecFileButton);
+            this.groupBox6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox6.Location = new System.Drawing.Point(8, 343);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox6.Name = "groupBox6";
@@ -432,13 +450,14 @@
             // 
             // RSADecButton
             // 
+            this.RSADecButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.RSADecButton.Location = new System.Drawing.Point(207, 161);
             this.RSADecButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RSADecButton.Name = "RSADecButton";
             this.RSADecButton.Size = new System.Drawing.Size(100, 28);
             this.RSADecButton.TabIndex = 8;
-            this.RSADecButton.Text = "Decipher";
-            this.RSADecButton.UseVisualStyleBackColor = true;
+            this.RSADecButton.Text = "Decrypt";
+            this.RSADecButton.UseVisualStyleBackColor = false;
             this.RSADecButton.Click += new System.EventHandler(this.RSADecButton_Click);
             // 
             // selectedRSADecKey
@@ -481,24 +500,26 @@
             // 
             // openRSADecKeyButton
             // 
+            this.openRSADecKeyButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.openRSADecKeyButton.Location = new System.Drawing.Point(9, 95);
             this.openRSADecKeyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.openRSADecKeyButton.Name = "openRSADecKeyButton";
             this.openRSADecKeyButton.Size = new System.Drawing.Size(100, 28);
             this.openRSADecKeyButton.TabIndex = 1;
             this.openRSADecKeyButton.Text = "Key";
-            this.openRSADecKeyButton.UseVisualStyleBackColor = true;
+            this.openRSADecKeyButton.UseVisualStyleBackColor = false;
             this.openRSADecKeyButton.Click += new System.EventHandler(this.openRSADecKeyButton_Click);
             // 
             // openRSADecFileButton
             // 
+            this.openRSADecFileButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.openRSADecFileButton.Location = new System.Drawing.Point(9, 25);
             this.openRSADecFileButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.openRSADecFileButton.Name = "openRSADecFileButton";
             this.openRSADecFileButton.Size = new System.Drawing.Size(100, 28);
             this.openRSADecFileButton.TabIndex = 0;
             this.openRSADecFileButton.Text = "File";
-            this.openRSADecFileButton.UseVisualStyleBackColor = true;
+            this.openRSADecFileButton.UseVisualStyleBackColor = false;
             this.openRSADecFileButton.Click += new System.EventHandler(this.openRSADecFileButton_Click);
             // 
             // groupBox5
@@ -510,6 +531,7 @@
             this.groupBox5.Controls.Add(this.selectedRSAEncFile);
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.openRSAEncFileButton);
+            this.groupBox5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox5.Location = new System.Drawing.Point(8, 133);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox5.Name = "groupBox5";
@@ -521,13 +543,14 @@
             // 
             // RSAEncButton
             // 
+            this.RSAEncButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.RSAEncButton.Location = new System.Drawing.Point(211, 158);
             this.RSAEncButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RSAEncButton.Name = "RSAEncButton";
             this.RSAEncButton.Size = new System.Drawing.Size(100, 28);
             this.RSAEncButton.TabIndex = 6;
             this.RSAEncButton.Text = "Encrypt";
-            this.RSAEncButton.UseVisualStyleBackColor = true;
+            this.RSAEncButton.UseVisualStyleBackColor = false;
             this.RSAEncButton.Click += new System.EventHandler(this.RSAEncButton_Click);
             // 
             // selectedRSAEncKey
@@ -551,13 +574,14 @@
             // 
             // openRSAEncKeyButton
             // 
+            this.openRSAEncKeyButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.openRSAEncKeyButton.Location = new System.Drawing.Point(8, 89);
             this.openRSAEncKeyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.openRSAEncKeyButton.Name = "openRSAEncKeyButton";
             this.openRSAEncKeyButton.Size = new System.Drawing.Size(100, 28);
             this.openRSAEncKeyButton.TabIndex = 3;
             this.openRSAEncKeyButton.Text = "Key";
-            this.openRSAEncKeyButton.UseVisualStyleBackColor = true;
+            this.openRSAEncKeyButton.UseVisualStyleBackColor = false;
             this.openRSAEncKeyButton.Click += new System.EventHandler(this.openRSAEncKeyButton_Click);
             // 
             // selectedRSAEncFile
@@ -581,19 +605,21 @@
             // 
             // openRSAEncFileButton
             // 
+            this.openRSAEncFileButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.openRSAEncFileButton.Location = new System.Drawing.Point(8, 26);
             this.openRSAEncFileButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.openRSAEncFileButton.Name = "openRSAEncFileButton";
             this.openRSAEncFileButton.Size = new System.Drawing.Size(100, 28);
             this.openRSAEncFileButton.TabIndex = 0;
             this.openRSAEncFileButton.Text = "File";
-            this.openRSAEncFileButton.UseVisualStyleBackColor = true;
+            this.openRSAEncFileButton.UseVisualStyleBackColor = false;
             this.openRSAEncFileButton.Click += new System.EventHandler(this.openRSAEncFileButton_Click);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.selectRSAKeySize);
             this.groupBox4.Controls.Add(this.generateRSAKeysButton);
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox4.Location = new System.Drawing.Point(8, 57);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
@@ -602,6 +628,7 @@
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Key generation";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // selectRSAKeySize
             // 
@@ -620,17 +647,19 @@
             // 
             // generateRSAKeysButton
             // 
+            this.generateRSAKeysButton.BackColor = System.Drawing.SystemColors.Desktop;
             this.generateRSAKeysButton.Location = new System.Drawing.Point(83, 22);
             this.generateRSAKeysButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.generateRSAKeysButton.Name = "generateRSAKeysButton";
             this.generateRSAKeysButton.Size = new System.Drawing.Size(121, 28);
             this.generateRSAKeysButton.TabIndex = 0;
             this.generateRSAKeysButton.Text = "Save the key";
-            this.generateRSAKeysButton.UseVisualStyleBackColor = true;
+            this.generateRSAKeysButton.UseVisualStyleBackColor = false;
             this.generateRSAKeysButton.Click += new System.EventHandler(this.generateRSAKeysButton_Click);
             // 
             // tabpage3
             // 
+            this.tabpage3.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.tabpage3.Controls.Add(this.outputtextbox);
             this.tabpage3.Controls.Add(this.DecryptButton);
             this.tabpage3.Controls.Add(this.EncryptButton);
@@ -648,6 +677,7 @@
             this.tabpage3.Controls.Add(this.CipherText);
             this.tabpage3.Controls.Add(this.PlainTextInput);
             this.tabpage3.Controls.Add(this.label11);
+            this.tabpage3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tabpage3.Location = new System.Drawing.Point(4, 25);
             this.tabpage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabpage3.Name = "tabpage3";
@@ -655,7 +685,6 @@
             this.tabpage3.Size = new System.Drawing.Size(539, 565);
             this.tabpage3.TabIndex = 2;
             this.tabpage3.Text = "Text";
-            this.tabpage3.UseVisualStyleBackColor = true;
             // 
             // outputtextbox
             // 
@@ -668,24 +697,28 @@
             // 
             // DecryptButton
             // 
+            this.DecryptButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.DecryptButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.DecryptButton.Location = new System.Drawing.Point(283, 431);
             this.DecryptButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DecryptButton.Name = "DecryptButton";
             this.DecryptButton.Size = new System.Drawing.Size(205, 28);
             this.DecryptButton.TabIndex = 15;
             this.DecryptButton.Text = "Decrypt";
-            this.DecryptButton.UseVisualStyleBackColor = true;
+            this.DecryptButton.UseVisualStyleBackColor = false;
             this.DecryptButton.Click += new System.EventHandler(this.Decrypt_Click);
             // 
             // EncryptButton
             // 
+            this.EncryptButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.EncryptButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.EncryptButton.Location = new System.Drawing.Point(89, 430);
             this.EncryptButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EncryptButton.Name = "EncryptButton";
             this.EncryptButton.Size = new System.Drawing.Size(185, 30);
             this.EncryptButton.TabIndex = 14;
             this.EncryptButton.Text = "Encrypt";
-            this.EncryptButton.UseVisualStyleBackColor = true;
+            this.EncryptButton.UseVisualStyleBackColor = false;
             this.EncryptButton.Click += new System.EventHandler(this.Encrypt_Click);
             // 
             // label17
@@ -768,24 +801,28 @@
             // 
             // DecButton
             // 
-            this.DecButton.Location = new System.Drawing.Point(283, 198);
+            this.DecButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.DecButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DecButton.Location = new System.Drawing.Point(183, 198);
             this.DecButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DecButton.Name = "DecButton";
-            this.DecButton.Size = new System.Drawing.Size(205, 28);
+            this.DecButton.Size = new System.Drawing.Size(185, 28);
             this.DecButton.TabIndex = 5;
             this.DecButton.Text = "Decrypt";
-            this.DecButton.UseVisualStyleBackColor = true;
+            this.DecButton.UseVisualStyleBackColor = false;
             this.DecButton.Click += new System.EventHandler(this.DecButton_Click);
             // 
             // EncButton
             // 
-            this.EncButton.Location = new System.Drawing.Point(89, 106);
+            this.EncButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.EncButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.EncButton.Location = new System.Drawing.Point(183, 105);
             this.EncButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EncButton.Name = "EncButton";
             this.EncButton.Size = new System.Drawing.Size(185, 30);
             this.EncButton.TabIndex = 4;
             this.EncButton.Text = "Encrypt";
-            this.EncButton.UseVisualStyleBackColor = true;
+            this.EncButton.UseVisualStyleBackColor = false;
             this.EncButton.Click += new System.EventHandler(this.EncButton_Click);
             // 
             // label12
@@ -849,16 +886,19 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.richTextBox2.Location = new System.Drawing.Point(0, 4);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(531, 558);
             this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
+            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.tabPage4.Controls.Add(this.extractPassword);
             this.tabPage4.Controls.Add(this.passwordTb);
             this.tabPage4.Controls.Add(this.userNameTb);
@@ -872,22 +912,24 @@
             this.tabPage4.Size = new System.Drawing.Size(539, 565);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Forget Password";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // extractPassword
             // 
-            this.extractPassword.Location = new System.Drawing.Point(396, 229);
+            this.extractPassword.BackColor = System.Drawing.SystemColors.Desktop;
+            this.extractPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extractPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.extractPassword.Location = new System.Drawing.Point(409, 251);
             this.extractPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.extractPassword.Name = "extractPassword";
-            this.extractPassword.Size = new System.Drawing.Size(100, 28);
+            this.extractPassword.Size = new System.Drawing.Size(100, 37);
             this.extractPassword.TabIndex = 11;
             this.extractPassword.Text = "Extract";
-            this.extractPassword.UseVisualStyleBackColor = true;
+            this.extractPassword.UseVisualStyleBackColor = false;
             this.extractPassword.Click += new System.EventHandler(this.extractPassword_Click);
             // 
             // passwordTb
             // 
-            this.passwordTb.Location = new System.Drawing.Point(175, 279);
+            this.passwordTb.Location = new System.Drawing.Point(189, 283);
             this.passwordTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordTb.Name = "passwordTb";
             this.passwordTb.Size = new System.Drawing.Size(197, 22);
@@ -895,7 +937,7 @@
             // 
             // userNameTb
             // 
-            this.userNameTb.Location = new System.Drawing.Point(175, 229);
+            this.userNameTb.Location = new System.Drawing.Point(189, 233);
             this.userNameTb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userNameTb.Name = "userNameTb";
             this.userNameTb.Size = new System.Drawing.Size(197, 22);
@@ -904,20 +946,24 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(52, 288);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Location = new System.Drawing.Point(24, 288);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(70, 16);
+            this.label18.Size = new System.Drawing.Size(97, 20);
             this.label18.TabIndex = 8;
             this.label18.Text = "Password:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(52, 233);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.Location = new System.Drawing.Point(24, 233);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(107, 16);
+            this.label19.Size = new System.Drawing.Size(151, 20);
             this.label19.TabIndex = 7;
             this.label19.Text = "Enter Username:";
             // 
@@ -925,6 +971,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label20.Location = new System.Drawing.Point(151, 66);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
@@ -998,8 +1045,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(579, 624);
             this.Controls.Add(this.tabControl1);
+            this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;

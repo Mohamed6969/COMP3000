@@ -39,7 +39,7 @@ namespace RsaAes
                 else
                 {
                     dr.Close();
-                    MessageBox.Show("Signed up success fully!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Signed up success fully!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }
@@ -60,6 +60,11 @@ namespace RsaAes
         {
             MessageBox.Show("Goodbye");
             this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -120,6 +120,22 @@
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>887, 56</value>
   </metadata>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>* After login the user chooses the preferred key size.
+
+* Upon choosing a key size a password is required to generate the key.
+
+* After encrypting the desired file, make sure you change the encrypted file type to the original file name.
+
+* If the user decides to keep the unencrypted version of the file, name the encrypted file to a different name.
+
+* If the user decides to delete the unencrypted version of the file, name the encrypted file as the same name.
+
+* When decrypting a file make sure you remember the created password because the decryption will fail.
+* In case the user forgets the password they created for the key, there is a password recovery.
+
+* In forget password tab, type in your user and press the extract button to recover the created password.</value>
+  </data>
   <metadata name="saveAESKeyDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

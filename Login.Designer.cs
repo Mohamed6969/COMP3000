@@ -41,10 +41,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(112, 56);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(117, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 55);
+            this.label1.Size = new System.Drawing.Size(177, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sign in";
             // 
@@ -52,6 +53,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(12, 156);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 31);
@@ -62,6 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(12, 219);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 31);
@@ -87,41 +90,48 @@
             // 
             // buttonlogin
             // 
+            this.buttonlogin.BackColor = System.Drawing.SystemColors.Desktop;
             this.buttonlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonlogin.Location = new System.Drawing.Point(18, 308);
+            this.buttonlogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonlogin.Location = new System.Drawing.Point(127, 284);
             this.buttonlogin.Name = "buttonlogin";
-            this.buttonlogin.Size = new System.Drawing.Size(103, 45);
+            this.buttonlogin.Size = new System.Drawing.Size(142, 45);
             this.buttonlogin.TabIndex = 5;
-            this.buttonlogin.Text = "Login";
-            this.buttonlogin.UseVisualStyleBackColor = true;
+            this.buttonlogin.Text = "login";
+            this.buttonlogin.UseVisualStyleBackColor = false;
             this.buttonlogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // buttonexit
             // 
+            this.buttonexit.BackColor = System.Drawing.SystemColors.Desktop;
             this.buttonexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonexit.Location = new System.Drawing.Point(293, 308);
+            this.buttonexit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonexit.Location = new System.Drawing.Point(245, 359);
             this.buttonexit.Name = "buttonexit";
-            this.buttonexit.Size = new System.Drawing.Size(102, 45);
+            this.buttonexit.Size = new System.Drawing.Size(110, 45);
             this.buttonexit.TabIndex = 6;
-            this.buttonexit.Text = "Exit";
-            this.buttonexit.UseVisualStyleBackColor = true;
+            this.buttonexit.Text = "exit";
+            this.buttonexit.UseVisualStyleBackColor = false;
             this.buttonexit.Click += new System.EventHandler(this.buttonexit_Click);
             // 
             // btnSignup
             // 
+            this.btnSignup.BackColor = System.Drawing.SystemColors.Desktop;
             this.btnSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignup.Location = new System.Drawing.Point(151, 308);
+            this.btnSignup.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSignup.Location = new System.Drawing.Point(43, 359);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(113, 45);
             this.btnSignup.TabIndex = 7;
-            this.btnSignup.Text = "Signup";
-            this.btnSignup.UseVisualStyleBackColor = true;
+            this.btnSignup.Text = "signup";
+            this.btnSignup.UseVisualStyleBackColor = false;
             this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(407, 423);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.buttonexit);
@@ -132,6 +142,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);

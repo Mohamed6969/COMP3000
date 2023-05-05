@@ -228,7 +228,8 @@ namespace MainGui
             Size size = new Size(width, height);
             //Create a new form using a System.Windows Form
             Form inputBox = new Form();
-
+            inputBox.StartPosition = FormStartPosition.CenterScreen;
+            
             inputBox.FormBorderStyle = FormBorderStyle.FixedDialog;
             inputBox.ClientSize = size;
 
@@ -1010,6 +1011,16 @@ namespace MainGui
         }
 
         private void GUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
         {
 
         }
